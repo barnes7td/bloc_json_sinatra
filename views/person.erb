@@ -1,0 +1,13 @@
+<h2><%= @person["name"] %></h2>
+
+<h3>Bio</h3>
+<p><%= @person["bio"] %></p>
+
+<% @person["favorites"].each_pair do |fav, list| %>
+  <h3><%= fav %></h3>
+  <ul>
+  <% list.each do |item| %>
+    <li><%= item %></li>
+  <% end %>
+  </ul>
+<% end %>

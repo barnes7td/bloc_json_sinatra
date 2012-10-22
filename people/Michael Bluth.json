@@ -1,0 +1,8 @@
+{
+  "name": "Michael Bluth",
+  "bio": "This is my story",
+  "favorites": {
+    "Movies": ["Braveheart", "Tommy Boy"],
+    "Music Genres": ["Dubstep", "Bluegrass", "Alternative"]
+  }
+}
