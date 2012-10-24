@@ -1,8 +1,8 @@
 {
   "name": "Michael Bluth",
-  "bio": "This is my story",
+  "bio": "I run my family's business. I like to spend time with my son George Michael.",
   "favorites": {
-    "Movies": ["Braveheart", "Tommy Boy"],
-    "Music Genres": ["Dubstep", "Bluegrass", "Alternative"]
+    "Movies": ["Juno", "Necessary Roughness", "Teen Wolf Too"],
+    "Hobbies": ["Chicken Dance", "Selling Bananas", "Solving Crisis"]
   }
 }

@@ -1,8 +1,8 @@
 {
   "name": "Timothy Barnes",
-  "bio": "This is my story",
+  "bio": "I live in Indianapolis, IN, where I work as a computer draftsman.",
   "favorites": {
-    "Movies": ["Braveheart", "Tommy Boy"],
-    "Music Genres": ["Dubstep", "Bluegrass", "Alternative"]
+    "Movies": ["Braveheart", "Tommy Boy", "The Shooter", "13th Warrior"],
+    "Music Genres": ["Bluegrass", "Alternative", "Dubstep"]
   }
 }
