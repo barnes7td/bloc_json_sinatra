@@ -3,19 +3,29 @@ require './people.rb'
 
 people = People.new
 
-get '/' do
+get '/people', :provides => [:html] do
   @names = people.find_all_names
-  p @names
   erb :people
 end
 
-get '/:id' do
-  puts params[:id]
-  if people.include? params[:id]
-    @person = people.find(params[:id])
+get '/people', :provides => [:json] do
+  people.find_all_names(:json)
+end
+
+get '/people/:name', :provides => [:html] do
+  if people.include? params[:name]
+    @person = people.find(params[:name])
     erb :person
   else
     not_found
+  end
+end
+
+get '/people/:name', :provides => [:json] do
+  if people.include? params[:name]
+    people.find(params[:name], :json)
+  else
+    "404 - This person is not found"
   end
 end
 

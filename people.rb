@@ -11,12 +11,14 @@ class People
     end
   end
 
-  def find(name)
-    person = read_file names[name]
+  def find(name, format = :ruby)
+    return read_file names[name] if format == :ruby
+    (read_file names[name]).to_json if format == :json
   end
 
-  def find_all_names
-    names.keys
+  def find_all_names(format = :ruby)
+    return names.keys if format == :ruby
+    names.keys.to_json if format == :json
   end
 
   def include?(person)
